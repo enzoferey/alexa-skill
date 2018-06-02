@@ -10,7 +10,8 @@ const handlers = {
         this.emit('Habak');
     },
     'Habak': function () {
-        this.response.speak("Habak");
+        console.log(this.event.request.intent.slots.city.value);
+        this.response.speak("Habak in " + this.event.request.intent.slots.city.value);
         this.emit(':responseReady');
     },
     'AMAZON.HelpIntent': function () {
