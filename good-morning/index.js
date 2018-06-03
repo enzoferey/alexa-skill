@@ -8,7 +8,7 @@ const STOP_MESSAGE = 'Goodbye!';
 const FALLBACK_MESSAGE = 'I am sorry, can you repeat that?';
 
 function toDegress(temperature) {
-    return ((temperature - 32) / (9/5)).toFixed(2);
+    return parseInt((temperature - 32) / (9/5));
 }
 
 const handlers = {
@@ -44,7 +44,7 @@ const handlers = {
         this.emit(':responseReady');
     },
     'AMAZON.FallbackIntent': function () {
-        this.responde.speak(FALLBACK_MESSAGE);
+        this.response.speak(FALLBACK_MESSAGE);
         this.emit(':responseReady');
     }
 };

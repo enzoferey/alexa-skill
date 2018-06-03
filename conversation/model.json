@@ -1,0 +1,109 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "good morning",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GoodMorning",
+                    "slots": [],
+                    "samples": [
+                        "morning",
+                        "good morning"
+                    ]
+                },
+                {
+                    "name": "GoodSleep",
+                    "slots": [
+                        {
+                            "name": "good",
+                            "type": "good"
+                        }
+                    ],
+                    "samples": [
+                        "{good}"
+                    ]
+                },
+                {
+                    "name": "BadSleep",
+                    "slots": [
+                        {
+                            "name": "bad",
+                            "type": "bad"
+                        }
+                    ],
+                    "samples": [
+                        "{bad}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "good",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "very good"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "very well"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "well"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "great"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "good"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "bad",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "not so well"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "very bad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bad"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
